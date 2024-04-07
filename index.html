@@ -13108,7 +13108,7 @@ function returnOptimals(cats) {
     for (let i = 0; i < secondRound.length; i++) {
         key = secondRound[i];
         pokemon = data[key];
-        if (pokemon[4] > maxWeight) {secondKey = maxKey; secondWeight = maxWeight; maxKey = key; maxWeight = pokemon[4]; alert(key);}
+        if (pokemon[4] > maxWeight) {secondKey = maxKey; secondWeight = maxWeight; maxKey = key; maxWeight = pokemon[4]; alert("KEY: " + key); alert("Second: " + secondKey);}
         if (pokemon[4] > secondWeight) {secondWeight = pokemon[4]; secondKey = key;}
     }
     alert(secondKey);
