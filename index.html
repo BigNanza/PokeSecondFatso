@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokeFatso</title>
+    <title>PokeSecondFatso</title>
     <link rel="stylesheet" href="data:text/css;base64,Ym9keSwge2JvZHl7CgkJbWFyZ2luOiAwOwoJcGFkZGluZzogMDsKCX0KfQ==">
     <style>
         /* CSS code here */
@@ -259,7 +259,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>PokeFatso</h1>
+            <h1>PokeSecondFatso</h1>
         </header>
         <div class="button-grid">
             <div class="fell"><p></p></div>
@@ -13108,7 +13108,7 @@ function returnOptimals(cats) {
     for (let i = 0; i < secondRound.length; i++) {
         key = secondRound[i];
         pokemon = data[key];
-        if (pokemon[4] > maxWeight) {secondKey = maxKey; secondWeight = maxWeight; maxKey = key; maxWeight = pokemon[4];}
+        if (pokemon[4] > maxWeight) {secondKey = maxKey; secondWeight = maxWeight; maxKey = key; maxWeight = pokemon[4]; alert(key);}
         if (pokemon[4] > secondWeight) {secondWeight = pokemon[4]; secondKey = key;}
     }
     alert(secondKey);
